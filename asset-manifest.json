@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/art-museum-react-project/static/css/main.17f79603.chunk.css",
+    "main.js": "/art-museum-react-project/static/js/main.2b1defda.chunk.js",
+    "main.js.map": "/art-museum-react-project/static/js/main.2b1defda.chunk.js.map",
+    "runtime-main.js": "/art-museum-react-project/static/js/runtime-main.382d65f2.js",
+    "runtime-main.js.map": "/art-museum-react-project/static/js/runtime-main.382d65f2.js.map",
+    "static/css/2.95f25948.chunk.css": "/art-museum-react-project/static/css/2.95f25948.chunk.css",
+    "static/js/2.5089bb6f.chunk.js": "/art-museum-react-project/static/js/2.5089bb6f.chunk.js",
+    "static/js/2.5089bb6f.chunk.js.map": "/art-museum-react-project/static/js/2.5089bb6f.chunk.js.map",
+    "index.html": "/art-museum-react-project/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/art-museum-react-project/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.17f79603.chunk.css.map": "/art-museum-react-project/static/css/main.17f79603.chunk.css.map",
+    "static/js/2.5089bb6f.chunk.js.LICENSE.txt": "/art-museum-react-project/static/js/2.5089bb6f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.382d65f2.js",
+    "static/css/2.95f25948.chunk.css",
+    "static/js/2.5089bb6f.chunk.js",
+    "static/css/main.17f79603.chunk.css",
+    "static/js/main.2b1defda.chunk.js"
+  ]
+}
