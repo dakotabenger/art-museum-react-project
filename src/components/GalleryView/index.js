@@ -1,6 +1,6 @@
-import {useParams} from "react-router-dom";
 import ArtImageTile from "../ArtImageTile";
-import {Route} from 'react-router-dom'
+import {Route,Switch,useParams} from 'react-router-dom'
+import ArtDescription from "../ArtDescription";
 
 export default function GalleryView({galleries}){
     const {galleryId} = useParams();
@@ -12,15 +12,20 @@ export default function GalleryView({galleries}){
         <div>
             <h1> Hello from Gallery View!</h1>
             <h2>{gallery.name}</h2>
+            
             <Route exact path={`/galleries/:galleryid`}>
-            {gallery.objects.map(artwork => {
-                console.log(artwork)
+            {gallery.objects.map(art => {
+                // console.log(artwork)
                 return (
-                 <ArtImageTile artwork={artwork} galleryId={galleryId}/>    
+                <ArtImageTile art={art} galleryId={galleryId}/>    
                 )
                 
             })}
             </Route>
+            <Route exact path="/galleries/:galleryid/art/:artid">
+                <ArtDescription gallery={gallery} />
+            </Route>
+            
         </div>
     )
 }
