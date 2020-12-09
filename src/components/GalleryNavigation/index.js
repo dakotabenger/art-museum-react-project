@@ -12,16 +12,12 @@ export default function GalleryNavigation(props){
                 <h1>Galleries</h1>
             </NavLink>
            {galleries.map(gallery => {
-               return ( <NavLink exact key={gallery.gallerynumber} to={`/galleries/${gallery.gallerynumber}`} >
+               return ( <NavLink exact key={gallery.galleryid} to={`/galleries/${gallery.galleryid}`} >
                    {gallery.name}
                </NavLink>
                )
             })}
-            <Switch>
-                <Route exact path={"/galleries/:galleryId"}>
-                    <h1>Test</h1>            
-                 </Route>
-            </Switch>
+           
         </nav>
     )
     }
