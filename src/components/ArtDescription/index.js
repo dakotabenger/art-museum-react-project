@@ -16,7 +16,7 @@ const artwork = gallery.objects.find(artwork => {
                 Back to Gallery: {gallery.name}
             </Link>
             <div>
-                <div>
+                <div className="image-div">
                     {artwork.images.map(image => {
                         return (
                             <img className="artwork-images" src={image.baseimageurl} alt={image.alt}></img>
@@ -24,7 +24,7 @@ const artwork = gallery.objects.find(artwork => {
                     })}
                 </div>
                 <div className="artwork-details">
-                    <a className="artwork-link" href={gallery.url}>{artwork.title}</a>
+                <p className="redirect-description">Click here for more info: <a className="artwork-link" href={gallery.url}>"{artwork.title}"</a></p>
                     <p className="artwork-title">Description: <span className="artwork-text">{artwork.description}</span></p>
                     <p className="artwork-title">Credit: <span className="artwork-text"> {artwork.creditline}</span></p>
                     <p className="artwork-title">Technique: <span className="artwork-text">{artwork.technique}</span></p>

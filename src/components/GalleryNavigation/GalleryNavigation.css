@@ -1,7 +1,9 @@
-.active {
+
+.navBrand, .nav-link-color {
+    color: #ffde2d !important;
     font-weight: bold;
 }
-
-.nav-link-gallaries {
-    text-decoration: none;
+.active {
+    font-weight: bolder;
+    color: #4db848 !important;
 }

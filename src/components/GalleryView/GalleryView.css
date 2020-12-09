@@ -1,9 +1,12 @@
 .gallery-name {
     text-align: center;
-    text-shadow: blue;
+    color: #fcb315;
 }
 
 .harvard-header {
     text-align: center;
+    color: #fcb315;
+    border-top: black solid 5px;
+    width: 100%;
 }
 

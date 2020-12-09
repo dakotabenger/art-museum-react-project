@@ -3,6 +3,9 @@
     width: 100%;
     /* margin: 5px; */
     /* padding: 5px; */
+    border: 20px solid #ec8f9c;
+    border-radius: 30%;
+
 
 
 }
@@ -13,12 +16,13 @@
 }
 .gallery-image-grid {
     display: grid;
-    background-color: rgba(191, 191, 191, 0.5);
+    background-color: #ed1b34;
     grid-template-columns:  80px 300px 300px 300px 300px 300px 80px;
     grid-template-rows: 20px 350px 350px 20px;
     grid-gap: 15px;
     height: 780px;
     width: 1765px;
+    border-radius: 3%;
     /* margin: 10px; */
 }
 

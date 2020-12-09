@@ -1,5 +1,22 @@
 /* TODO Add site wide styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 body {
-    background-color: rgba(103, 128, 159, 1) !important;
+    background-color: #A51C30 !important;
     width: 100%;
+    font-family: 'Graduate' !important;
+}
+
+.harvard-art {
+    color: #fcb315;
+    font-size: 75pt;
+    text-align: center;
+    border-bottom: solid black 5pt;
+}
+
+.harvard-art-p {
+    color: #fcb315;
+    font-size: 35pt;
+    text-align: center;
+    text-decoration: underline solid black;
 }

@@ -13,11 +13,11 @@ function App() {
                     <GalleryView galleries={harvardArt.records}></GalleryView>       
                  </Route>
                  <Route exact path={'/'}>
-                   <h2>Harvard Art Museum</h2>
-                   <p>Look but don't touch. Please select a gallery in the navigation bar</p>
+                   <h2 className="harvard-art">Harvard Art Museum</h2>
+                   <p className="harvard-art-p">Look but don't touch. Please select a gallery in the navigation bar</p>
                  </Route>
                  <Route>
-                  <h2> Page Not Found</h2>
+                  <h2 className="harvard-art"> Page Not Found</h2>
                  </Route>
             </Switch>
     </div>
