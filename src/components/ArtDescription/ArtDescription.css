@@ -1,0 +1,26 @@
+.artwork-title {
+    font-weight: bold;
+}
+
+.artwork-images {
+    display: inline;
+    height: 600px;
+    width: 450px;
+}
+
+.artwork-text {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.artwork-link {
+    display: block;
+    text-align: center;
+}
+
+#return-to-gallery {
+    display: flex;
+    font-size: 15pt;
+    justify-content: center;
+    align-items: center;
+}

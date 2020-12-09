@@ -1,6 +1,8 @@
 import ArtImageTile from "../ArtImageTile";
 import {Route,Switch,useParams} from 'react-router-dom'
 import ArtDescription from "../ArtDescription";
+import '../ArtImageTile/ArtImageTile.css'
+import './GalleryView.css'
 
 export default function GalleryView({galleries}){
     const {galleryId} = useParams();
@@ -9,20 +11,26 @@ export default function GalleryView({galleries}){
     const gallery = galleries.find(gallery => gallery.gallerynumber === galleryId)
     console.log(gallery.objects)
     return(
-        <div>
-            <h1> Hello from Gallery View!</h1>
-            <h2>{gallery.name}</h2>
+        <div className="background">
+            <h1 className="harvard-header"> Harvard Art Gallery</h1>
+            <h2 className="gallery-name">{gallery.name}</h2>
             
             <Route exact path={`/galleries/:galleryid`}>
-            {gallery.objects.map(art => {
-                // console.log(artwork)
+            <div className="gallery-image-div">            <div className="gallery-image-grid">
+
+            {gallery.objects.map((art,i) => {
+                console.log(i)
                 return (
-                <ArtImageTile art={art} galleryId={galleryId}/>    
+                <div id={`image-grid-container-${i}`}>
+                <ArtImageTile key={art.id}art={art} galleryId={galleryId}/>    
+                </div>
                 )
                 
             })}
+            </div>
+            </div>
             </Route>
-            <Route exact path="/galleries/:galleryid/art/:artid">
+            <Route  path={`/galleries/:galleryId/art/:artId`}>
                 <ArtDescription gallery={gallery} />
             </Route>
             

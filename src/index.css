@@ -1,1 +1,5 @@
 /* TODO Add site wide styles */
+body {
+    background-color: rgba(103, 128, 159, 1) !important;
+    width: 100%;
+}

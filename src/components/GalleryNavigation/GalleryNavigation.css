@@ -1,3 +1,7 @@
 .active {
     font-weight: bold;
 }
+
+.nav-link-gallaries {
+    text-decoration: none;
+}

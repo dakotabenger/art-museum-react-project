@@ -2,14 +2,14 @@ import harvardArt from "./data/harvardArt.js"
 import GalleryNavigation from './components/GalleryNavigation/index.js'
 import {Switch, Route} from 'react-router-dom'
 import GalleryView from "./components/GalleryView/index.js"
-
+import "./index.css"
 function App() {
   console.log(harvardArt)
   return (
-    <div>
+    <div className="app">
     <GalleryNavigation galleries={harvardArt.records} ></GalleryNavigation>
      <Switch>
-                <Route exact path={"/galleries/:galleryId"}>
+                <Route path={"/galleries/:galleryId"}>
                     <GalleryView galleries={harvardArt.records}></GalleryView>       
                  </Route>
                  <Route exact path={'/'}>

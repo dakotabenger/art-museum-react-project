@@ -1,23 +1,35 @@
 import { useParams,Link } from "react-router-dom";
-
+import "./ArtDescription.css"
 export default function ArtDescription({gallery}) {
-    const {artid} = useParams();
-
+    const {artId} = useParams();
+console.log(artId)
+console.log(gallery.objects)
+const artwork = gallery.objects.find(artwork => {
+    console.log(artwork)
+    // console.log(artwork["objectid"])
+    return artwork["id"] === parseInt(artId)
+})
     return (
-        <h1>Testing</h1>
-        // <div>
-        //     <Link to={`/galleries/${gallery.gallerynumber}`}>
-        //         Back to Gallery {gallery.objects[artid].name}
-        //     </Link>
-        //     <a href={gallery.url}>{gallery.objects[artid].title}</a>
-        //     <p>Description: {gallery.objects[artid].description}</p>
-        //     <p>Credit: {gallery.objects[artid].creditline}</p>
-        //     <p>Technique: {gallery.objects[artid].technique}</p>
-        //     {gallery.objects[artid].images.map(image => {
-        //         return (
-        //             <img src={image.baseimageurl} alt={image.alt} />
-        //         )
-        //     })}
-        // </div>
+       
+        <div>
+            <Link id="return-to-gallery" to={`/galleries/${gallery.gallerynumber}`}>
+                Back to Gallery: {gallery.name}
+            </Link>
+            <div>
+                <div>
+                    {artwork.images.map(image => {
+                        return (
+                            <img className="artwork-images" src={image.baseimageurl} alt={image.alt}></img>
+                        )
+                    })}
+                </div>
+                <div className="artwork-details">
+                    <a className="artwork-link" href={gallery.url}>{artwork.title}</a>
+                    <p className="artwork-title">Description: <span className="artwork-text">{artwork.description}</span></p>
+                    <p className="artwork-title">Credit: <span className="artwork-text"> {artwork.creditline}</span></p>
+                    <p className="artwork-title">Technique: <span className="artwork-text">{artwork.technique}</span></p>
+                </div>
+            </div>
+        </div>
     )
 }
